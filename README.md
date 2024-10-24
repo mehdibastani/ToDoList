@@ -51,12 +51,13 @@ The API will be available at http://127.0.0.1:8000.
 You can interact with the API using the Swagger UI at http://127.0.0.1:8000/docs.
 
 #### Project Structure
-
+```
 /project-folder
     ├── main.py                # Main FastAPI application
     ├── kanban_board.py        # KanbanBoard class with database logic
     ├── kanban.db              # SQLite database (auto-generated)
     └── README.md              # Project documentation (this file)
+```
     
 - main.py: Contains the main FastAPI app and API routes.
 - kanban_board.py: Defines the KanbanBoard class and the Task SQLModel schema.
