@@ -64,3 +64,44 @@ You can interact with the API using the Swagger UI at http://127.0.0.1:8000/docs
 - kanban.db: SQLite database file where tasks are stored.
 - requirements.txt: All required dependencies which should be installed
 - README.md: Project instructions and documentation.
+
+####  API Endpoints
+#####  Get all tasks
+- URL: /tasks
+- Method: GET
+- Response: Returns a list of all tasks.
+#####  Get a task by ID
+- URL: /tasks/{task_id}
+- Method: GET
+- Response: Returns a single task by its ID.
+#####  Create a new task
+- URL: /tasks
+- Method: POST
+- Request Body:
+```
+{
+  "id": 1,
+  "title": "New Task",
+  "description": "Description of the task",
+  "status": "to-do"
+}
+```
+- Response: Returns the newly created task.
+
+##### Update a task
+- URL: /tasks/{task_id}
+- Method: PUT
+- Request Body:
+```
+{
+  "title": "Updated Task Title",
+  "description": "Updated description",
+  "status": "in-progress"
+}
+```
+- Response: Returns the updated task.
+
+##### Delete a task
+- URL: /tasks/{task_id}
+- Method: DELETE
+- Response: Returns a confirmation message after successful deletion.
