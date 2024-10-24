@@ -16,3 +16,12 @@ Follow these steps to set up and run the project on your local machine:
 ```bash
 git clone https://github.com/mehdibastani/ToDoList.git
 cd ToDoList
+
+### 2. Create and activate a virtual environment (optional but recommended)
+For Unix/macOS:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+For Windows:
+python -m venv venv
+venv\\Scripts\\activate
